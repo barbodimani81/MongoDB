@@ -39,3 +39,11 @@ close(jobs)
 wg.Wait()
 ```
 
+### Concurrent: 
+
+- 6 goroutines batching (1000 size, 6 workers)
+- 10k ->  -
+- 100k -> 1.3s
+- 1M -> 4s
+
+- 1M & 10k batch: 3s
